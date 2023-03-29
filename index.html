@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>HustleLife Product Manager</h1>
+  <form id="product-form">
+    <input type="text" id="product-number" placeholder="Product Number" required>
+    <input type="url" id="marketplace-links" placeholder="Our Listing">
+    <input type="number" id="purchase-price" placeholder="Purchase Price" step="0.01">
+    <input type="number" id="expected-value" placeholder="Expected Value" step="0.01">
+    <input type="url" id="relevant-listings" placeholder="Comparison Listings">
+    <input type="number" id="sale-price" placeholder="Sale Price" step="0.01">
+    <input type="number" id="costs" placeholder="Costs" step="0.01">
+    <input type="date" id="date-acquired">
+    <input type="date" id="date-sold">
+    <button type="submit">Add Product</button>
+  </form>
+  <button id="clear-local-storage">Clear Local Storage</button>
+
+  <table id="product-table">
+    <thead>
+      <tr>
+        <th>Product Number</th>
+        <th>Our Listing</th>
+        <th>Purchase Price</th>
+        <th>Expected Value</th>
+        <th>Comparison Listings</th>
+        <th>Sale Price</th>
+        <th>Costs</th>
+        <th>Total Profit</th>
+        <th>Date Acquired</th>
+        <th>Date Sold</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Products will be added here -->
+      <tr id="totals-row">
+        <td>Total</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+
+</html>
